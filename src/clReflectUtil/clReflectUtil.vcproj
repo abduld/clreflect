@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+    ProjectType="Visual C++"
+    Version="8.00"
+    Name="clReflectUtil"
+    ProjectGUID="{14805C70-FE45-11E0-AB9C-F46D04D48D5F}"
+    RootNamespace="clReflectUtil"
+    Keyword="Win32Proj"
+    >
+    <Platforms>
+        <Platform
+            Name="Win32"
+        />
+    </Platforms>
+    <ToolFiles>
+    </ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\..\build\bin\debug"
+			IntermediateDirectory="..\..\build\obj\debug\clReflectUtil"
+			ConfigurationType="0"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="pib -pf clReflectUtil.pibfile -config debug"
+				ReBuildCommandLine="pib -pf clReflectUtil.pibfile rebuild -config debug"
+				CleanCommandLine="pib -pf clReflectUtil.pibfile clean -config debug"
+				Output="..\..\build\bin\debug\clutil.lib"
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\..\build\bin\release"
+			IntermediateDirectory="..\..\build\obj\release\clReflectUtil"
+			ConfigurationType="0"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="pib -pf clReflectUtil.pibfile -config release"
+				ReBuildCommandLine="pib -pf clReflectUtil.pibfile rebuild -config release"
+				CleanCommandLine="pib -pf clReflectUtil.pibfile clean -config release"
+				Output="..\..\build\bin\release\clutil.lib"
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Public API"
+			UniqueIdentifier="{1480aa90-fe45-11e0-9478-f46d04d48d5f}"
+			>
+			<Filter
+				Name="clutl"
+				UniqueIdentifier="{1480aa91-fe45-11e0-be2c-f46d04d48d5f}"
+				>
+				<File
+					RelativePath="..\..\inc\clutl\Containers.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\inc\clutl\Objects.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\inc\clutl\Serialise.h"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<File
+			RelativePath="Containers.cpp"
+			>
+		</File>
+		<File
+			RelativePath="Objects.cpp"
+			>
+		</File>
+		<File
+			RelativePath="SerialiseJSON.cpp"
+			>
+		</File>
+		<File
+			RelativePath="SerialiseVersionedBinary.cpp"
+			>
+		</File>
+		<File
+			RelativePath="clReflectUtil.pibfile"
+			>
+		</File>
+	</Files>
+	<Globals>
+		<Global
+			Name="PiBDigest"
+			Value="lMag67saKGGkq7MOqdmV0g=="
+		/>
+	</Globals>
+</VisualStudioProject>
