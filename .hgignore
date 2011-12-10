@@ -1,0 +1,10 @@
+syntax: glob
+build/*
+*.ncb
+*.suo
+*.pib
+*.user
+*.sln
+*.vcproj
+.svn/*
+extern/llvm-build/*
