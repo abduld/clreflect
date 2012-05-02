@@ -1,0 +1,20 @@
+
+# TODO: Configs should be build-specific, not environment specific
+
+ExecPibfile("src/clReflectCpp/clReflectCpp.pibfile")
+ExecPibfile("src/clReflectUtil/clReflectUtil.pibfile")
+ExecPibfile("src/clReflectCore/clReflectCore.pibfile")
+ExecPibfile("src/clReflectScan/clReflectScan.pibfile")
+ExecPibfile("src/clReflectMerge/clReflectMerge.pibfile")
+ExecPibfile("src/clReflectExport/clReflectExport.pibfile")
+ExecPibfile("src/clReflectTest/clReflectTest.pibfile")
+
+# Generate MSVC project files
+VCGenerateSolutionFile(env, "clReflect", [
+    "src/clReflectCpp/clReflectCpp",
+    "src/clReflectUtil/clReflectUtil",
+    "src/clReflectCore/clReflectCore",
+    "src/clReflectScan/clReflectScan",
+    "src/clReflectMerge/clReflectMerge",
+    "src/clReflectExport/clReflectExport",
+    "src/clReflectTest/clReflectTest" ])
